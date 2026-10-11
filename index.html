@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dipsago — Water tracking for iPhone &amp; Apple Watch</title>
+  <meta name="description" content="Water tracking for iPhone and Apple Watch. Tap once to log a drink. Dipsago counts how each drink really hydrates you.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F7FAFC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#08121C" media="(prefers-color-scheme: dark)">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Dipsago">
+  <meta property="og:title" content="Dipsago — Water tracking for iPhone &amp; Apple Watch">
+  <meta property="og:description" content="Tap once to log a drink. Dipsago counts how each drink really hydrates you.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preload" href="assets/fonts/GeistVariableVF.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.min.css?v=2">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3C9.6 11.4 6.2 16.1 6.2 20.4a9.8 9.8 0 0 0 19.6 0C25.8 16.1 22.4 11.4 16 3z"/>
+        </svg>
+        <span>Dipsago</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <details class="faq-menu">
+          <summary>FAQ</summary>
+          <div class="faq-menu-panel">
+            <details class="faq-item">
+              <summary>Where is my data stored?</summary>
+              <div class="faq-body"><p>In HealthKit, on your device. Dipsago uploads nothing, needs no account, and ships without analytics or ads.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Which devices are supported?</summary>
+              <div class="faq-body"><p>Any iPhone on iOS 26 or later, any Apple Watch on watchOS 26 or later. Widgets run on both.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Does it work offline?</summary>
+              <div class="faq-body"><p>Yes. Logging, reminders, and charts all run on your device, so Dipsago works without a connection.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>How much does it cost?</summary>
+              <div class="faq-body"><p>Dipsago is free. No subscriptions, no in-app purchases.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Can I log a drink from earlier today?</summary>
+              <div class="faq-body"><p>Yes. Pick a date and time to log something you drank earlier.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary>Can I edit or delete an entry?</summary>
+              <div class="faq-body"><p>Yes. Change the amount, drink or time, or delete the entry. Entries from other Health apps stay locked, Apple does not let us touch those.</p></div>
+            </details>
+          </div>
+        </details>
+      </nav>
+      <a class="nav-gh" href="https://github.com/kvrdkvDev" aria-label="Developer profile on GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.2-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.7-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-copy">
+        <p class="eyebrow reveal">For iPhone &amp; Apple Watch</p>
+        <h1 class="reveal">Every drop counts.</h1>
+        <p class="hero-sub reveal">Water tracking for iPhone and Apple Watch. Tap once to log a drink. Dipsago counts how each drink really hydrates you: coffee at 90%, alcohol at 50%.</p>
+        <div class="hero-actions reveal">
+          <button type="button" class="btn btn-primary btn-coming" aria-disabled="true" title="Dipsago is not on the App Store yet">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+            <span class="btn-label">Coming soon to the App Store</span>
+          </button>
+        </div>
+      </div>
+      <div class="container showcase reveal">
+        <picture>
+          <source srcset="assets/img/hero-promo.webp" type="image/webp">
+          <img src="assets/img/hero-promo.png" alt="Dipsago running on an iPhone with an Apple Watch beside it, showing the daily water goal" width="1247" height="1460" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="reveal">Your goal, one glance away.</h2>
+        <div class="features-grid">
+          <article class="card reveal">
+            <h3>Know where you stand</h3>
+            <p>Set your goal from 500 to 5000 ml. Dipsago keeps count through the day.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Your drinks, one tap away</h3>
+            <p>Build up to seven preset buttons and move them around until they fit how you drink.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Reminders that stay quiet</h3>
+            <p>Dipsago only nudges when you fall behind. Weekdays and weekends can run on their own schedule, up to eight reminders a day.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>iPhone and Watch</h3>
+            <p>Log on either one. Both stay in sync on their own.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Widgets on both</h3>
+            <p>Your goal on the home screen and on your wrist. You can log from the widget itself.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Look back</h3>
+            <p>Check your week, month or year. Charts show how your drinking changes over time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 3C9.6 11.4 6.2 16.1 6.2 20.4a9.8 9.8 0 0 0 19.6 0C25.8 16.1 22.4 11.4 16 3z"/>
+        </svg>
+        <span>Dipsago</span>
+      </a>
+      <p class="footer-note">© 2026 Dipsago · Made with HealthKit</p>
+      <nav class="footer-legal" aria-label="Legal">
+        <button type="button" data-dialog="privacy">Privacy</button>
+        <button type="button" data-dialog="imprint">Imprint</button>
+        <button type="button" data-dialog="support">Support</button>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog id="dialog-privacy" class="legal-dialog" aria-labelledby="privacy-title">
+    <div class="legal-dialog-header">
+      <h2 id="privacy-title" class="legal-dialog-title">Privacy Policy</h2>
+      <button type="button" class="legal-dialog-close" data-close aria-label="Close privacy policy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="legal-dialog-body">
+      <p class="legal-updated">Last updated: August 15, 2026</p>
+      <h3>The short version</h3>
+      <p>Dipsago does not collect, store, transmit, or sell any personal data. There are no servers behind this app, no analytics, no ads, and no tracking. Everything stays on your device.</p>
+      <h3>What Dipsago does with your data</h3>
+      <p>Dipsago is a water tracking app for iPhone and Apple Watch. It reads and writes your water intake through Apple Health (HealthKit).</p>
+      <p>All water entries live in Apple's HealthKit database. Dipsago only asks HealthKit for the entries it needs to show you.</p>
+      <p>To show your data quickly, and so the widgets work, Dipsago keeps small temporary copies of today's water totals and pending entries on your device, for example in the shared app group the widgets use. These snapshots exist only on your device, no other app can read them, and they are removed when you delete Dipsago. Dipsago never sends anything anywhere.</p>
+      <h3>Data on your device</h3>
+      <p>The app stores a few small preferences and local log files so it can remember things like your daily water goal and which screen you last looked at. These files live in the app's own container and are removed when you delete the app. They never leave your device.</p>
+      <h3>Health data</h3>
+      <p>Health data is handled by Apple's HealthKit, not by Dipsago. That means:</p>
+      <ul>
+        <li>Your water entries are protected by the same privacy controls Apple applies to all health data.</li>
+        <li>Dipsago has no access to your data once it leaves your device. It has no server to receive it.</li>
+        <li>If you delete an entry in Dipsago, it is removed from HealthKit. To remove everything, delete the entries in the Health app or revoke Dipsago's access in Health settings.</li>
+        <li>If you have iCloud Health sync enabled, Apple may sync your Health data to your iCloud account. That happens through Apple's own systems, not through Dipsago.</li>
+      </ul>
+      <h3>Notifications</h3>
+      <p>Dipsago can send local reminders to help you drink water. These are created on your device and never leave it. No notification data is sent anywhere.</p>
+      <h3>Third parties</h3>
+      <p>There are none. Dipsago contains no third-party analytics, crash reporting, advertising, or tracking software.</p>
+      <h3>Children</h3>
+      <p>The app is safe for anyone to use. Since no data is collected, there is nothing to protect here.</p>
+      <h3>Changes to this policy</h3>
+      <p>If this app ever changes what it does with data, this policy will be updated before that change ships. You can check this page at any time to see the current version.</p>
+      <h3>Contact</h3>
+      <p>Questions about this policy? Write to <a href="mailto:and_kav@icloud.com">and_kav@icloud.com</a>.</p>
+    </div>
+  </dialog>
+
+  <dialog id="dialog-imprint" class="legal-dialog" aria-labelledby="imprint-title">
+    <div class="legal-dialog-header">
+      <h2 id="imprint-title" class="legal-dialog-title">Imprint</h2>
+      <button type="button" class="legal-dialog-close" data-close aria-label="Close imprint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="legal-dialog-body">
+      <div class="legal-block">
+        <h3>Information pursuant to § 5 DDG (Digital Services Act)</h3>
+        <p>Dipsago<br>Andreas Kavardakov<br>Hülser Straße 12<br>47906 Kempen<br>Germany</p>
+      </div>
+      <div class="legal-block">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:and_kav@icloud.com">and_kav@icloud.com</a></p>
+      </div>
+      <div class="legal-block">
+        <h3>Responsible for the content</h3>
+        <p>The person named above is responsible for the content of this page and of the Dipsago app.</p>
+      </div>
+      <div class="legal-block">
+        <h3>Hobby project, not a business</h3>
+        <p>Dipsago is a private hobby project. There is currently no revenue: the app is free, without advertising, subscriptions, or in-app purchases.</p>
+      </div>
+      <div class="legal-block legal-original" lang="de">
+        <h3>German original (legally binding)</h3>
+        <p>Dipsago<br>Andreas Kavardakov<br>Hülser Straße 12<br>47906 Kempen<br>Deutschland</p>
+        <p><strong>Kontakt:</strong> E-Mail: and_kav@icloud.com</p>
+        <p><strong>Verantwortlich für den Inhalt:</strong> Die oben genannte Person ist verantwortlich für den Inhalt dieser Seite und der App Dipsago.</p>
+        <p><strong>Hobby-Projekt, kein Gewerbe:</strong> Dipsago ist ein privates Hobby-Projekt. Aktuell gibt es keine Einnahmen: Die App ist kostenlos, ohne Werbung, Abos oder In-App-Käufe.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="dialog-support" class="legal-dialog" aria-labelledby="support-title">
+    <div class="legal-dialog-header">
+      <h2 id="support-title" class="legal-dialog-title">Support</h2>
+      <button type="button" class="legal-dialog-close" data-close aria-label="Close support">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="legal-dialog-body">
+      <p>Dipsago is a water tracking app for iPhone and Apple Watch. Your water entries are stored in Apple Health (HealthKit) on your device.</p>
+      <h3>Get help</h3>
+      <p>For questions, bug reports, or feature requests, write to <a href="mailto:and_kav@icloud.com">and_kav@icloud.com</a>.</p>
+      <p>Please include:</p>
+      <ul>
+        <li>Which device you use (iPhone, Apple Watch, or both)</li>
+        <li>Which version of iOS or watchOS you are running</li>
+        <li>What you did and what happened</li>
+      </ul>
+      <h3>Common questions</h3>
+      <h3>Where is my data stored?</h3>
+      <p>All water entries are stored in Apple Health on your device. Dipsago does not have its own database and does not send data anywhere.</p>
+      <h3>I deleted an entry by accident. Can you restore it?</h3>
+      <p>Dipsago cannot restore entries because it has no copy of your data. Check the Health app on your iPhone: entries deleted in Dipsago are removed from HealthKit, but anything synced through iCloud may still show up in Health's own history.</p>
+      <h3>Dipsago is not showing data from my Apple Watch.</h3>
+      <p>Open the Health app on your iPhone, tap your profile picture, and check that water intake appears under Health Access. If Dipsago has access, make sure both devices are online and give them a moment to sync.</p>
+      <h3>How do I delete all my data?</h3>
+      <p>Remove Dipsago's access in the Health app (Health &gt; profile &gt; Apps &gt; Dipsago) and delete the app. Water entries you added will stay in HealthKit unless you delete them there as well.</p>
+    </div>
+  </dialog>
+</body>
+</html>

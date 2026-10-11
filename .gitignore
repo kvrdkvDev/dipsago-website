@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+*.log
+.opencode/
+.superpowers/
+AGENTS.md
+docs/superpowers/
+docs/legal/
